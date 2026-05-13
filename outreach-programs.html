@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Amrita, Webinar, AI, Skill Development, Engineering, Workshop" />
+    <meta name="description" content="Build Your Future with Research, AI & Industry Opportunities at Amrita Vishwa Vidyapeetham" />
+    <title>Outreach Programs – Amrita TEC</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/images/iconimage.jpg" type="image/icon type">
+
+    <!-- Existing site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* ── Page-level overrides to match TEC site look ── */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* Hero / Banner */
+        #hero-outreach {
+            background: linear-gradient(135deg, #1a3a6b 0%, #0e6fad 60%, #12a4c0 100%);
+            color: #fff;
+            padding: 100px 0 70px;
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+        }
+        #hero-outreach::before {
+            content: '';
+            position: absolute;
+            top: -60px; right: -60px;
+            width: 320px; height: 320px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+        }
+        #hero-outreach::after {
+            content: '';
+            position: absolute;
+            bottom: -80px; left: -40px;
+            width: 260px; height: 260px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+        }
+        #hero-outreach h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+        #hero-outreach p.lead {
+            font-size: 1.1rem;
+            opacity: .9;
+            max-width: 640px;
+            margin: 0 auto 24px;
+        }
+        .btn-register {
+            background: #fff;
+            color: #1a3a6b;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            padding: 12px 36px;
+            border-radius: 30px;
+            font-size: 1rem;
+            letter-spacing: .5px;
+            transition: all .25s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-register:hover {
+            background: #f0c040;
+            color: #1a3a6b;
+            text-decoration: none;
+        }
+
+        /* Section labels */
+        .section-label {
+            text-align: center;
+            padding: 48px 0 10px;
+        }
+        .section-label h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #1a3a6b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .section-label .underline {
+            width: 48px;
+            height: 3px;
+            background: #0e6fad;
+            margin: 0 auto 16px;
+            border-radius: 2px;
+        }
+        .section-label p {
+            color: #666;
+            max-width: 680px;
+            margin: 0 auto;
+            font-size: .97rem;
+            line-height: 1.7;
+        }
+
+        /* Opportunity cards – three columns */
+        .opportunity-cards {
+            padding: 36px 0 48px;
+        }
+        .opp-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.08);
+            padding: 32px 24px;
+            text-align: center;
+            height: 100%;
+            transition: transform .25s, box-shadow .25s;
+        }
+        .opp-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(0,0,0,.13);
+        }
+        .opp-card .icon-circle {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        .icon-ai    { background: linear-gradient(135deg,#1a3a6b,#0e6fad); }
+        .icon-skill { background: linear-gradient(135deg,#d4610a,#f5a623); }
+        .icon-intern{ background: linear-gradient(135deg,#0a7a4f,#34c38f); }
+        .opp-card h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #1a3a6b;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+        .opp-card p {
+            font-size: .9rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Why Register */
+        #why-register {
+            background: #f4f8fd;
+            padding: 50px 0;
+        }
+        .why-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .why-item .wi-icon {
+            width: 38px; height: 38px; min-width: 38px;
+            background: #1a3a6b;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff;
+            font-size: .85rem;
+            margin-right: 14px;
+            margin-top: 2px;
+        }
+        .why-item p {
+            margin: 0;
+            font-size: .95rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Topics section */
+        #topics {
+            padding: 50px 0;
+        }
+
+        /* Field tabs */
+        .field-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 36px;
+        }
+        .field-tab {
+            background: #fff;
+            border: 2px solid #dde5f0;
+            border-radius: 30px;
+            padding: 8px 22px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .85rem;
+            font-weight: 600;
+            color: #1a3a6b;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .field-tab:hover, .field-tab.active {
+            background: #1a3a6b;
+            border-color: #1a3a6b;
+            color: #fff;
+        }
+
+        /* Topic panels */
+        .topic-panel { display: none; }
+        .topic-panel.active { display: block; }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+        @media (max-width: 768px) {
+            .topics-grid { grid-template-columns: 1fr; }
+        }
+
+        .topic-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.07);
+            overflow: hidden;
+        }
+        .topic-box-header {
+            background: linear-gradient(90deg,#1a3a6b,#0e6fad);
+            color: #fff;
+            padding: 14px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .92rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+        }
+        .topic-box-header.workshop {
+            background: linear-gradient(90deg,#d4610a,#f5a623);
+        }
+        .topic-box ul {
+            margin: 0;
+            padding: 16px 20px 16px 36px;
+            list-style: disc;
+        }
+        .topic-box ul li {
+            font-size: .88rem;
+            color: #444;
+            padding: 3px 0;
+            line-height: 1.55;
+        }
+
+        /* CTA strip */
+        #cta-strip {
+            background: linear-gradient(135deg,#1a3a6b,#0e6fad);
+            color: #fff;
+            padding: 48px 0;
+            text-align: center;
+        }
+        #cta-strip h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+        #cta-strip p {
+            opacity: .85;
+            margin-bottom: 24px;
+            font-size: 1rem;
+        }
+
+        /* Organizer bar */
+        #organizer-bar {
+            background: #fff;
+            padding: 28px 0;
+            border-top: 1px solid #e8edf5;
+            text-align: center;
+        }
+        #organizer-bar p {
+            margin: 0;
+            font-size: .9rem;
+            color: #666;
+            font-style: italic;
+        }
+        #organizer-bar strong {
+            color: #1a3a6b;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Existing footer styles */
+        #organize_2 {
+            background: #1a3a6b;
+            padding: 40px 0;
+            color: #fff;
+        }
+        .org-item { text-align: center; color: #fff; }
+        .org-item i { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+        .org-item h3 { font-size: 1rem; font-weight: 700; text-transform: uppercase; }
+        .org-item p { font-size: .88rem; opacity: .85; margin: 0; }
+        #footer { background: #0f2444; padding: 30px 0; text-align: center; }
+        #footer_2 { background: #0b1d36; padding: 16px 0; text-align: center; }
+        .menu-a a { color: #aac; margin: 0 12px; font-size: .85rem; text-decoration: none; }
+        .menu-a a:hover { color: #fff; }
+        .social-icons_2 a { color: #fff; font-size: 1.2rem; margin: 0 8px; }
+        #copy_right { background: #07111f; padding: 12px 0; text-align: center; }
+        #copy_right p { color: #778; font-size: .82rem; margin: 0; }
+
+        /* Navbar match */
+        /* Ensure hero never gets clipped behind sticky nav */
+        /* hero padding already set in main rule above */
+        @media (max-width: 991px) { #hero-outreach { padding-top: 60px; padding-bottom: 50px; } }
+        #navber { border-bottom: 1px solid #e0e8f0; }
+
+        /* Animate fade-in on scroll */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .5s ease, transform .5s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ══════════ NAVBAR (same as TEC site) ══════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+    <div class="container">
+        <img src="./images/website logo.jpg" alt="Amrita TEC" style="width:100px;">
+        <img src="./images/Science-Technology-and-Innovation-STI.png" alt="" style="width:130px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse menu-main" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto menu-item">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" data-toggle="dropdown">About</a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDrop">
+                        <a class="dropdown-item" href="./about.html">About TEC</a>
+                        <a class="dropdown-item" href="./amrita.html">About Amrita</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="prodDrop" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu" aria-labelledby="prodDrop">
+                        <a class="dropdown-item" href="./products.html">Technologies Ready</a>
+                        <a class="dropdown-item" href="./commercialized.html">Commercialized</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./members.html">Members</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventDrop" data-toggle="dropdown">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="eventDrop">
+                        <a class="dropdown-item" href="./activities.html">Webinars</a>
+                        <a class="dropdown-item" href="./gallery.html">Gallery</a>
+                        <a class="dropdown-item" href="./outreach-programs.html">Outreach</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="msmeDrop" data-toggle="dropdown">MSME</a>
+                    <div class="dropdown-menu" aria-labelledby="msmeDrop">
+                        <a class="dropdown-item" href="./msmesupport.html">MSME Supported</a>
+                        <a class="dropdown-item" href="./partner.html">MSME Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="./whitepapers.html">Whitepapers</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ══════════ NAVBAR END ══════════ -->
+
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero-outreach">
+    <div class="container position-relative" style="z-index:2;">
+        <h1>Build Your Future with Research,<br>AI &amp; Industry Opportunities</h1>
+        <p class="lead">Organised by the Institute Outreach Team · Amrita Vishwa Vidyapeetham</p>
+        <a href="https://forms.gle/DFRpWLquCjHtviM96" class="btn-register" target="_blank">Register for Free &nbsp;→</a>
+    </div>
+</section>
+<!-- ══════════ HERO END ══════════ -->
+
+
+<!-- ══════════ FEATURED OPPORTUNITIES ══════════ -->
+<div class="section-label fade-up">
+    <h2>Featured Opportunities</h2>
+    <div class="underline"></div>
+    <p>Curated programs designed to accelerate your career with hands-on learning, industry exposure, and cutting-edge research.</p>
+</div>
+
+<section class="opportunity-cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-ai"><i class="fa fa-microchip"></i></div>
+                    <h5>Agentic AI &amp; Emerging Tech Webinars</h5>
+                    <p>Live expert-led sessions on Agentic AI, generative models, and their real-world deployment across engineering domains.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-skill"><i class="fa fa-laptop"></i></div>
+                    <h5>Hands-on Skill Development Programs</h5>
+                    <p>Online workshops with practical project-based learning across CSE, ECE, Mechanical, Civil, and Electrical engineering.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-intern"><i class="fa fa-flask"></i></div>
+                    <h5>Research &amp; Internship Exposure</h5>
+                    <p>Connect with Amrita's research labs and industry partners for internship projects, innovation programmes, and R&amp;D opportunities.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-ai"><i class="fa fa-cogs"></i></div>
+                    <h5>AI in Engineering Domains</h5>
+                    <p>Domain-specific applications of AI across mechanical, electronics, civil, and electrical engineering — bridging research and industry.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-skill"><i class="fa fa-industry"></i></div>
+                    <h5>Industry Internship Opportunities</h5>
+                    <p>Structured internship placements with technology companies and core engineering industries curated by Amrita TEC.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="opp-card">
+                    <div class="icon-circle icon-intern"><i class="fa fa-users"></i></div>
+                    <h5>Career-Oriented Workshops &amp; Webinars</h5>
+                    <p>Interview prep, portfolio building, career roadmaps, and skill certifications to help you stand out in competitive job markets.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ FEATURED OPPORTUNITIES END ══════════ -->
+
+
+<!-- ══════════ WHY REGISTER ══════════ -->
+<section id="why-register">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0 fade-up">
+                <h2 style="font-family:'Montserrat',sans-serif;font-weight:700;color:#1a3a6b;font-size:1.8rem;margin-bottom:8px;">
+                    Why Register?
+                </h2>
+                <div style="width:48px;height:3px;background:#0e6fad;border-radius:2px;margin-bottom:20px;"></div>
+                <p style="color:#555;font-size:.97rem;line-height:1.75;">
+                    Limited seats are available. Registering ensures you receive priority notifications about upcoming programs, workshops, internships, and career opportunities at Amrita Vishwa Vidyapeetham.
+                </p>
+                <p style="color:#555;font-size:.97rem;line-height:1.75;">
+                    <strong style="color:#1a3a6b;">Organized by the Institute Outreach Team</strong>, these programs are crafted to bridge the gap between academia and industry.
+                </p>
+            </div>
+            <div class="col-lg-7 fade-up">
+                <div class="why-item">
+                    <div class="wi-icon"><i class="fa fa-bell"></i></div>
+                    <p>Get notified about upcoming workshops and webinars before they fill up</p>
+                </div>
+                <div class="why-item">
+                    <div class="wi-icon"><i class="fa fa-briefcase"></i></div>
+                    <p>Receive internship and project opportunities matched to your engineering stream</p>
+                </div>
+                <div class="why-item">
+                    <div class="wi-icon"><i class="fa fa-lightbulb-o"></i></div>
+                    <p>Connect with cutting-edge research and innovation activities at Amrita labs</p>
+                </div>
+                <div class="why-item">
+                    <div class="wi-icon"><i class="fa fa-line-chart"></i></div>
+                    <p>Enhance your technical and career skills with guided mentorship</p>
+                </div>
+                <div class="why-item">
+                    <div class="wi-icon"><i class="fa fa-university"></i></div>
+                    <p>Explore future academic and professional opportunities within Amrita ecosystem</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ WHY REGISTER END ══════════ -->
+
+
+<!-- ══════════ ENGINEERING FIELD-WISE TOPICS ══════════ -->
+<section id="topics">
+    <div class="section-label fade-up">
+        <h2>Engineering Field-wise Topics</h2>
+        <div class="underline"></div>
+        <p>Explore our comprehensive list of webinars and workshops tailored to every major engineering discipline. Select your field to view relevant topics.</p>
+    </div>
+
+    <div class="container">
+        <!-- Tab buttons -->
+        <div class="field-tabs fade-up">
+            <button class="field-tab active" onclick="showField('cse', this)">💻 CSE / IT / AI</button>
+            <button class="field-tab" onclick="showField('ece', this)">⚡ ECE / EEE</button>
+            <button class="field-tab" onclick="showField('mech', this)">⚙️ Mechanical</button>
+            <button class="field-tab" onclick="showField('civil', this)">🏗 Civil</button>
+            <button class="field-tab" onclick="showField('elec', this)">🔌 Electrical</button>
+        </div>
+
+        <!-- CSE Panel -->
+        <div id="panel-cse" class="topic-panel active fade-up">
+            <div class="topics-grid">
+                <div class="topic-box">
+                    <div class="topic-box-header">📡 Webinar Topics – CSE / IT / AI</div>
+                    <ul>
+                        <li>How to Get a High-Paying Tech Job Without Experience</li>
+                        <li>AI vs Software Development: Which Career Wins in 2026</li>
+                        <li>Top 10 Skills for ₹20 LPA Tech Roles</li>
+                        <li>Data Science vs AI vs Web Dev – What Should You Choose</li>
+                        <li>Why Basic Coding Skills Are No Longer Enough</li>
+                        <li>How Top Engineers Solve Real-World Problems</li>
+                        <li>Building Projects That Impress Recruiters</li>
+                        <li>Cybersecurity Careers: From Beginner to Expert</li>
+                        <li>Generative AI Careers: Opportunities Beyond ChatGPT</li>
+                        <li>How to Transition from Average Coder to Problem Solver</li>
+                        <li>Tech Jobs That Will Exist in 2030</li>
+                        <li>How to Build a Portfolio That Gets You Hired</li>
+                        <li>Real Skills vs College Syllabus – What Matters More</li>
+                        <li>How to Stand Out in Tech Interviews</li>
+                        <li>The Rise of Deep-Tech Careers</li>
+                        <li>Why Companies Prefer Practical Thinkers Over Coders</li>
+                        <li>Career Roadmap: Fresher to Senior Engineer</li>
+                        <li>What Recruiters Look for in Tech Candidates</li>
+                        <li>How to Break into AI Without a Strong Math Background</li>
+                        <li>From Projects to Paychecks: Turning Skills into Jobs</li>
+                    </ul>
+                </div>
+                <div class="topic-box">
+                    <div class="topic-box-header workshop">🛠 Workshop Topics – CSE / IT / AI</div>
+                    <ul>
+                        <li>Build a Full-Stack Web Application from Scratch</li>
+                        <li>End-to-End Machine Learning Mini Project using Python</li>
+                        <li>Data Analysis Bootcamp using Pandas</li>
+                        <li>AI Project Workshop using TensorFlow</li>
+                        <li>Resume + GitHub Portfolio Optimization</li>
+                        <li>Build and Deploy Your First Web App</li>
+                        <li>Problem-Solving Using Real Industry Datasets</li>
+                        <li>API Development &amp; Integration Workshop</li>
+                        <li>Cybersecurity Basics: Ethical Hacking Demo</li>
+                        <li>System Design Basics for Beginners</li>
+                        <li>Debugging &amp; Code Optimization Techniques</li>
+                        <li>Build Your Own Chatbot (Beginner Friendly)</li>
+                        <li>Cloud Deployment Basics (AWS/GCP Overview)</li>
+                        <li>Data Visualization Workshop</li>
+                        <li>Build a Recommendation System</li>
+                        <li>Coding Interview Problem-Solving Session</li>
+                        <li>Automation using Python Scripts</li>
+                        <li>Git &amp; Version Control Mastery</li>
+                        <li>Build a Scalable Backend System (Intro)</li>
+                        <li>Capstone Project: End-to-End Product Build</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ECE Panel -->
+        <div id="panel-ece" class="topic-panel fade-up">
+            <div class="topics-grid">
+                <div class="topic-box">
+                    <div class="topic-box-header">📡 Webinar Topics – ECE / EEE / Electronics</div>
+                    <ul>
+                        <li>Core vs IT Jobs for Electronics Engineers</li>
+                        <li>Semiconductor Industry Boom: Career Opportunities</li>
+                        <li>Future of Embedded Systems Careers</li>
+                        <li>IoT Careers: Skills You Need Now</li>
+                        <li>Why Core Electronics Jobs Are Making a Comeback</li>
+                        <li>EV &amp; Smart Devices: Where Electronics Engineers Fit</li>
+                        <li>Career Paths in VLSI Design</li>
+                        <li>Skills Required for Core Electronics Jobs</li>
+                        <li>How to Build a Strong Core Engineering Profile</li>
+                        <li>Industry 4.0 and Electronics Engineers</li>
+                        <li>Opportunities in Communication Systems</li>
+                        <li>Signal Processing Careers Explained</li>
+                        <li>From Circuit Theory to Industry Applications</li>
+                        <li>Electronics Engineers in Automation Industry</li>
+                        <li>Global Demand for Semiconductor Engineers</li>
+                        <li>Transitioning from Electronics to Software Roles</li>
+                        <li>Research-Driven Careers in Electronics</li>
+                        <li>High-Growth Domains for ECE Graduates</li>
+                        <li>Career Roadmap for Core Engineering Jobs</li>
+                        <li>How to Get Internships in Core Electronics</li>
+                    </ul>
+                </div>
+                <div class="topic-box">
+                    <div class="topic-box-header workshop">🛠 Workshop Topics – ECE / EEE / Electronics</div>
+                    <ul>
+                        <li>IoT Project using Arduino IDE</li>
+                        <li>Embedded Systems Programming Basics</li>
+                        <li>PCB Design Fundamentals</li>
+                        <li>MATLAB for Signal Processing</li>
+                        <li>VLSI Simulation Basics (Tool Demo)</li>
+                        <li>Build a Smart Home Automation System</li>
+                        <li>Microcontroller Programming Workshop</li>
+                        <li>Circuit Design &amp; Analysis Hands-on</li>
+                        <li>Wireless Communication Basics</li>
+                        <li>Sensor Integration Projects</li>
+                        <li>FPGA Basics (Intro Workshop)</li>
+                        <li>Analog vs Digital Circuit Design</li>
+                        <li>Troubleshooting Electronic Systems</li>
+                        <li>Power Electronics Basics</li>
+                        <li>EV Electronics Fundamentals</li>
+                        <li>IoT Data Monitoring System</li>
+                        <li>Signal Processing Practical Session</li>
+                        <li>Hardware Debugging Techniques</li>
+                        <li>Communication Systems Simulation</li>
+                        <li>Capstone: Build a Complete Embedded System</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- MECH Panel -->
+        <div id="panel-mech" class="topic-panel fade-up">
+            <div class="topics-grid">
+                <div class="topic-box">
+                    <div class="topic-box-header">📡  Webinar Topics – Mechanical Engineering</div>
+                    <ul>
+                        <li>Why Mechanical Engineers Struggle for Jobs (And Fix)</li>
+                        <li>EV Industry Careers for Mechanical Engineers</li>
+                        <li>Design vs Manufacturing vs IT Careers</li>
+                        <li>Future of Mechanical Engineering in Industry 4.0</li>
+                        <li>Robotics &amp; Automation Career Opportunities</li>
+                        <li>Core vs Non-Core Career Decisions</li>
+                        <li>Skills That Increase Mechanical Engineer Salaries</li>
+                        <li>Smart Manufacturing &amp; Digital Engineering</li>
+                        <li>Opportunities in Thermal &amp; Fluid Engineering</li>
+                        <li>Global Demand for Mechanical Engineers</li>
+                        <li>How to Build a Career in Design Engineering</li>
+                        <li>Simulation &amp; Analysis Careers Explained</li>
+                        <li>Mechanical Engineers in Robotics Industry</li>
+                        <li>Emerging Domains in Mechanical Engineering</li>
+                        <li>Career Growth Path in Core Industries</li>
+                        <li>How to Shift from Mechanical to Tech Roles</li>
+                        <li>Product Design Careers</li>
+                        <li>Real Industry Problems Mechanical Engineers Solve</li>
+                        <li>Innovation &amp; R&amp;D in Mechanical Field</li>
+                        <li>Career Roadmap for Mechanical Graduates</li>
+                    </ul>
+                </div>
+                <div class="topic-box">
+                    <div class="topic-box-header workshop">🛠 Workshop Topics – Mechanical Engineering</div>
+                    <ul>
+                        <li>CAD Design using SolidWorks</li>
+                        <li>Simulation using ANSYS</li>
+                        <li>Thermal Analysis Basics</li>
+                        <li>Fluid Mechanics Simulation</li>
+                        <li>EV System Design Fundamentals</li>
+                        <li>Robotics Mechanism Design</li>
+                        <li>Product Design Workshop</li>
+                        <li>Manufacturing Process Simulation</li>
+                        <li>Automation Tools Overview</li>
+                        <li>Mechanical System Troubleshooting</li>
+                        <li>3D Modeling Hands-on</li>
+                        <li>Finite Element Analysis Basics</li>
+                        <li>HVAC System Basics</li>
+                        <li>CNC Programming Intro</li>
+                        <li>Industrial Design Thinking</li>
+                        <li>Mechanical Project Build Session</li>
+                        <li>Design Optimization Techniques</li>
+                        <li>Mechatronics Basics</li>
+                        <li>Industry 4.0 Tools Demo</li>
+                        <li>Capstone: Design + Simulation Project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- CIVIL Panel -->
+        <div id="panel-civil" class="topic-panel fade-up">
+            <div class="topics-grid">
+                <div class="topic-box">
+                    <div class="topic-box-header">📡 Webinar Topics – Civil Engineering</div>
+                    <ul>
+                        <li>Civil Engineering Careers Beyond Site Jobs</li>
+                        <li>Government vs Private Sector Careers</li>
+                        <li>Smart Cities &amp; Infrastructure Opportunities</li>
+                        <li>Sustainable Construction Careers</li>
+                        <li>Future of Civil Engineering</li>
+                        <li>Structural Engineering Career Path</li>
+                        <li>How to Increase Salary in Civil Engineering</li>
+                        <li>Real Estate &amp; Infrastructure Careers</li>
+                        <li>Opportunities in Environmental Engineering</li>
+                        <li>Urban Planning Careers</li>
+                        <li>Digital Construction Technologies</li>
+                        <li>Global Demand for Civil Engineers</li>
+                        <li>Project Management Careers</li>
+                        <li>Advanced Construction Techniques</li>
+                        <li>Career Roadmap for Civil Engineers</li>
+                        <li>Research &amp; Innovation in Civil Engineering</li>
+                        <li>Infrastructure Development Careers</li>
+                        <li>Water Resource Management Careers</li>
+                        <li>Civil Engineers in Smart Infrastructure</li>
+                        <li>Future Skills for Civil Engineers</li>
+                    </ul>
+                </div>
+                <div class="topic-box">
+                    <div class="topic-box-header workshop">🛠 Workshop Topics – Civil Engineering</div>
+                    <ul>
+                        <li>AutoCAD for Civil Engineers</li>
+                        <li>BIM using Autodesk Revit</li>
+                        <li>Structural Analysis using ETABS</li>
+                        <li>Quantity Surveying Practical Session</li>
+                        <li>GIS using ArcGIS</li>
+                        <li>Site Planning &amp; Layout Design</li>
+                        <li>Construction Project Management Tools</li>
+                        <li>Estimation &amp; Costing Workshop</li>
+                        <li>Foundation Design Basics</li>
+                        <li>Structural Design Concepts</li>
+                        <li>Water Resource Modeling</li>
+                        <li>Surveying Techniques</li>
+                        <li>Smart Infrastructure Planning</li>
+                        <li>Environmental Impact Analysis</li>
+                        <li>Concrete Technology Basics</li>
+                        <li>Construction Scheduling Tools</li>
+                        <li>Building Design Workshop</li>
+                        <li>Urban Planning Basics</li>
+                        <li>Risk Management in Projects</li>
+                        <li>Capstone: Complete Civil Project Plan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ELEC Panel -->
+        <div id="panel-elec" class="topic-panel fade-up">
+            <div class="topics-grid">
+                <div class="topic-box">
+                    <div class="topic-box-header">📡 Webinar Topics – Electrical Engineering</div>
+                    <ul>
+                        <li>Careers in Renewable Energy for Electrical Engineers</li>
+                        <li>Power Systems vs EV Industry Careers</li>
+                        <li>Future of Electrical Engineering Jobs</li>
+                        <li>Smart Grid Technologies &amp; Careers</li>
+                        <li>Core vs IT Career Path</li>
+                        <li>High-Demand Skills in Electrical Engineering</li>
+                        <li>EV Revolution &amp; Electrical Engineers</li>
+                        <li>Automation &amp; Control Systems Careers</li>
+                        <li>Power Sector Opportunities</li>
+                        <li>Career Growth in Electrical Engineering</li>
+                        <li>Global Opportunities in Electrical Field</li>
+                        <li>Electrical Engineers in Industry 4.0</li>
+                        <li>Energy Sector Careers Explained</li>
+                        <li>Research Opportunities in Electrical Engineering</li>
+                        <li>How to Build a Strong Core Profile</li>
+                        <li>Electrical Design Careers</li>
+                        <li>Power Electronics Careers</li>
+                        <li>Industrial Automation Jobs</li>
+                        <li>Career Roadmap for Electrical Engineers</li>
+                        <li>Future Skills for Electrical Engineers</li>
+                    </ul>
+                </div>
+                <div class="topic-box">
+                    <div class="topic-box-header workshop">🛠 Workshop Topics – Electrical Engineering</div>
+                    <ul>
+                        <li>Power System Simulation using MATLAB</li>
+                        <li>Solar Power System Design</li>
+                        <li>PLC &amp; Automation Basics</li>
+                        <li>Control Systems Workshop</li>
+                        <li>Electrical Circuit Design Hands-on</li>
+                        <li>Power Electronics Basics</li>
+                        <li>Smart Grid Simulation</li>
+                        <li>EV Charging Systems Basics</li>
+                        <li>Industrial Automation Demo</li>
+                        <li>Electrical Troubleshooting Techniques</li>
+                        <li>Renewable Energy Modeling</li>
+                        <li>Motor Control Systems</li>
+                        <li>Protection Systems Basics</li>
+                        <li>SCADA Systems Intro</li>
+                        <li>Electrical CAD Tools</li>
+                        <li>Energy Audit Basics</li>
+                        <li>Power Distribution Design</li>
+                        <li>Electrical Safety &amp; Standards</li>
+                        <li>Industrial Electrical Systems</li>
+                        <li>Capstone: Power System Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /container -->
+</section>
+<!-- ══════════ TOPICS END ══════════ -->
+
+
+<!-- ══════════ REGISTER CTA ══════════ -->
+<section id="register" style="padding:0;">
+    <div id="cta-strip">
+        <div class="container">
+            <h3>Register Now – Limited Seats Available</h3>
+            <p>Scan the QR code on our flyer or click the button below to register and receive updates on all upcoming opportunities.</p>
+            <a href="#" class="btn-register" style="background:#f0c040;color:#1a3a6b;">Register to Receive Updates</a>
+        </div>
+    </div>
+</section>
+<!-- ══════════ CTA END ══════════ -->
+
+
+<!-- ══════════ ORGANIZER BAR ══════════ -->
+<div id="organizer-bar">
+    <div class="container">
+        <p>Organised by &nbsp;<strong>Institute Outreach Team</strong>&nbsp;·&nbsp;
+            <strong>Amrita Vishwa Vidyapeetham</strong>
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook" style="margin:0 6px;"></i>
+            <i class="fa fa-linkedin"></i>
+        </p>
+    </div>
+</div>
+
+
+<!-- ══════════ FOOTER (matching TEC site) ══════════ -->
+<!-- <section id="organize_2">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 org-item p-2">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3>Email</h3>
+                    <p>tec@amrita.edu</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item sm-style-h p-2">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h3>Website</h3>
+                    <p><a href="http://www.amrita.edu/tec" style="text-decoration:none;color:white;">www.amrita.edu/tec</a></p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item p-2">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>Location</h3>
+                    <p>Technology Enabling Centre (TEC),</p>
+                    <p>Amrita Vishwa Vidyapeetham, Amritapuri</p>
+                    <p>Clappana P. O. , Kerala, India – 690 525.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item or-i-none p-2">
+                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    <h3>Mobile</h3>
+                    <p>+91 8921434611</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="footer">
+    <div class="container zindex">
+        <div class="row">
+            <div class="col-lg-12 text-center footer-txt">
+                <img src="./images/Science-Technology-and-Innovation-STI.png" alt="" style="height:60px;">
+                <img src="./images/website logo.jpg" alt="" style="height:80px;">
+                <img src="./images/amrita1.jpg" alt="" style="height:70px;">
+                <div class="social-icons_2" style="margin-top:12px;">
+                    <a href="https://www.facebook.com/AmritaTEC/"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHJi1WQ9Fd-tebdxipqcNZw"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 m-auto">
+                <div class="menu-a text-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./members.html">Members</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./partner.html">Partners</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="copy_right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center copy-right-txt">
+                <p>Copyright © 2024 – Amrita Vishwa Vidyapeetham. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ FOOTER END ══════════ -->
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Field tab switching
+    function showField(field, btn) {
+        document.querySelectorAll('.topic-panel').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.field-tab').forEach(b => b.classList.remove('active'));
+        document.getElementById('panel-' + field).classList.add('active');
+        btn.classList.add('active');
+    }
+
+    // Scroll-triggered fade-up
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

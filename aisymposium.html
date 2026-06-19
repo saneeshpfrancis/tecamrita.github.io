@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Amrita, AI Symposium, Agentic AI, Perception, Sustainability, Governed Agency, AI Safety" />
+    <meta name="description" content="AI at Scale: Perception, Sustainability & Governed Agency — A research symposium at Amrita Vishwa Vidyapeetham, 22-23 June 2026" />
+    <title>AI Symposium 2026 – Amrita TEC</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/images/iconimage.jpg" type="image/icon type">
+
+    <!-- Existing site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ── HERO ── */
+        #hero-symposium {
+            background: linear-gradient(135deg, #0b1f47 0%, #0e6fad 55%, #14a3c7 100%);
+            color: #fff;
+            padding: 100px 0 70px;
+            margin-top: 70px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            min-height: 340px;
+            display: flex;
+            align-items: center;
+        }
+        #hero-symposium::before {
+            content: '';
+            position: absolute;
+            top: -60px; right: -60px;
+            width: 320px; height: 320px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.06);
+        }
+        #hero-symposium::after {
+            content: '';
+            position: absolute;
+            bottom: -80px; left: -40px;
+            width: 260px; height: 260px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.05);
+        }
+        .hero-tag {
+            display: inline-block;
+            background: rgba(255,255,255,0.14);
+            border: 1px solid rgba(255,255,255,0.35);
+            border-radius: 30px;
+            padding: 6px 22px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .82rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        #hero-symposium h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 2.3rem;
+            letter-spacing: .5px;
+            margin-bottom: 8px;
+            line-height: 1.25;
+        }
+        #hero-symposium h1 span {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 600;
+            opacity: .92;
+        }
+        #hero-symposium p.lead {
+            font-size: 1.05rem;
+            opacity: .9;
+            max-width: 680px;
+            margin: 18px auto 28px;
+            line-height: 1.7;
+        }
+        .btn-register {
+            background: #fff;
+            color: #0b1f47;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+            padding: 12px 36px;
+            border-radius: 30px;
+            font-size: 1rem;
+            letter-spacing: .5px;
+            transition: all .25s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-register:hover {
+            background: #f0c040;
+            color: #0b1f47;
+            text-decoration: none;
+        }
+
+        /* ── HOST STRIP ── */
+        #host-strip {
+            background: #14305c;
+            color: #fff;
+            text-align: center;
+            padding: 14px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .95rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
+
+        /* ── QUICK INFO BAR ── */
+        #quick-info {
+            background: #f4f8fd;
+            padding: 36px 0;
+        }
+        .info-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.07);
+            padding: 26px 22px;
+            text-align: center;
+            height: 100%;
+        }
+        .info-card .ic-icon {
+            width: 54px; height: 54px;
+            border-radius: 50%;
+            background: linear-gradient(135deg,#0b1f47,#0e6fad);
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 14px;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+        .info-card h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: .82rem;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            color: #999;
+            margin-bottom: 6px;
+        }
+        .info-card p {
+            font-size: .98rem;
+            color: #1a3a6b;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Section labels */
+        .section-label {
+            text-align: center;
+            padding: 48px 0 10px;
+        }
+        .section-label h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: #1a3a6b;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .section-label .underline {
+            width: 48px;
+            height: 3px;
+            background: #0e6fad;
+            margin: 0 auto 16px;
+            border-radius: 2px;
+        }
+        .section-label p {
+            color: #666;
+            max-width: 720px;
+            margin: 0 auto;
+            font-size: .97rem;
+            line-height: 1.7;
+        }
+
+        /* ── ABOUT ── */
+        #about-symposium {
+            padding: 10px 0 50px;
+        }
+        #about-symposium .about-box {
+            background: #fff;
+            border-left: 4px solid #0e6fad;
+            border-radius: 8px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.06);
+            padding: 30px 34px;
+            font-size: .98rem;
+            color: #444;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* ── SPEAKERS ── */
+        #speakers {
+            padding: 10px 0 50px;
+            background: #f4f8fd;
+        }
+        .speaker-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0,0,0,.08);
+            text-align: center;
+            padding: 28px 18px;
+            height: 100%;
+            transition: transform .25s, box-shadow .25s;
+        }
+        .speaker-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 32px rgba(0,0,0,.13);
+        }
+        .speaker-photo {
+            width: 110px; height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 16px;
+            border: 3px solid #e6effa;
+            display: block;
+        }
+        .speaker-tag {
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .5px;
+            text-transform: uppercase;
+            padding: 3px 12px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .speaker-tag.online { background: #e3f2fb; color: #0e6fad; }
+        .speaker-tag.in-presence { background: #fdeee0; color: #d4610a; }
+        .speaker-card h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: .98rem;
+            color: #1a3a6b;
+            margin-bottom: 4px;
+        }
+        .speaker-card .s-org {
+            font-size: .8rem;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        .speaker-card .s-topic {
+            font-size: .85rem;
+            color: #555;
+            line-height: 1.5;
+            min-height: 56px;
+        }
+        .speaker-card .s-readmore {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: .8rem;
+            font-weight: 700;
+            color: #0e6fad;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .speaker-bio-detail {
+            display: none;
+            text-align: left;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px dashed #ddd;
+            font-size: .83rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        .speaker-bio-detail.show { display: block; }
+        .speaker-bio-detail strong { color: #1a3a6b; }
+
+        /* ── SCHEDULE ── */
+        #schedule {
+            padding: 10px 0 50px;
+        }
+        .day-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .day-tab {
+            background: #fff;
+            border: 2px solid #dde5f0;
+            border-radius: 30px;
+            padding: 10px 28px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .9rem;
+            font-weight: 700;
+            color: #1a3a6b;
+            cursor: pointer;
+            transition: all .2s;
+        }
+        .day-tab:hover, .day-tab.active {
+            background: #1a3a6b;
+            border-color: #1a3a6b;
+            color: #fff;
+        }
+        .day-panel { display: none; }
+        .day-panel.active { display: block; }
+
+        .schedule-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0,0,0,.07);
+        }
+        .schedule-table thead th {
+            background: linear-gradient(90deg,#0b1f47,#0e6fad);
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: .85rem;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            padding: 14px 18px;
+            text-align: left;
+        }
+        .schedule-table tbody td {
+            padding: 14px 18px;
+            font-size: .9rem;
+            color: #444;
+            border-bottom: 1px solid #eef2f8;
+            vertical-align: top;
+        }
+        .schedule-table tbody tr:last-child td { border-bottom: none; }
+        .schedule-table tbody tr:nth-child(even) { background: #f9fbfd; }
+        .schedule-table td.time-col {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #0e6fad;
+            white-space: nowrap;
+            width: 130px;
+        }
+        .schedule-table strong { color: #1a3a6b; }
+
+        /* ── VENUE / CTA ── */
+        #cta-strip {
+            background: linear-gradient(135deg,#0b1f47,#0e6fad);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+        #cta-strip h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.7rem;
+            margin-bottom: 10px;
+        }
+        #cta-strip p {
+            opacity: .88;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        #cta-strip .qr-box {
+            background: #fff;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 18px 0;
+        }
+        #cta-strip .qr-box img {
+            width: 130px; height: 130px;
+            display: block;
+        }
+        #cta-strip .venue-line {
+            margin-top: 18px;
+            font-size: .92rem;
+            opacity: .85;
+        }
+        #cta-strip .venue-line i { margin-right: 6px; }
+
+        /* Navbar match */
+        #navber { border-bottom: 1px solid #e0e8f0;
+        background: linear-gradient(90deg, #0b1f47 0%, #0e6fad 100%); }
+        
+
+        /* Footer — no overrides; css/style.css handles #organize_2, .org-item etc. */
+
+        /* Animate fade-in on scroll */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .5s ease, transform .5s ease;
+        }
+        .fade-up.visible {
+            opacity: 1;
+            transform: none;
+        }
+
+        @media (max-width: 991px) {
+            #hero-symposium { padding: 60px 0 50px; min-height: auto; }
+            #hero-symposium h1 { font-size: 1.7rem; }
+            #hero-symposium h1 span { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ══════════ NAVBAR (same as TEC site) ══════════ -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="navber">
+    <div class="container">
+        <img src="./images/website logo.jpg" alt="Amrita TEC" style="width:100px;">
+        <img src="./images/Science-Technology-and-Innovation-STI.png" alt="" style="width:130px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse menu-main" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto menu-item">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="aboutDrop" data-toggle="dropdown">About</a>
+                    <div class="dropdown-menu" aria-labelledby="aboutDrop">
+                        <a class="dropdown-item" href="./about.html">About TEC</a>
+                        <a class="dropdown-item" href="./amrita.html">About Amrita</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="prodDrop" data-toggle="dropdown">Products</a>
+                    <div class="dropdown-menu" aria-labelledby="prodDrop">
+                        <a class="dropdown-item" href="./products.html">Technologies Ready</a>
+                        <a class="dropdown-item" href="./commercialized.html">Commercialized</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./members.html">Members</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="eventDrop" data-toggle="dropdown">Events</a>
+                    <div class="dropdown-menu" aria-labelledby="eventDrop">
+                        <a class="dropdown-item" href="./activities.html">Webinars</a>
+                        <a class="dropdown-item" href="./gallery.html">Gallery</a>
+                        <a class="dropdown-item" href="./outreach-programs.html">Outreach</a>
+                        <a class="dropdown-item" href="./aisymposium.html">AI Symposium</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="msmeDrop" data-toggle="dropdown">MSME</a>
+                    <div class="dropdown-menu" aria-labelledby="msmeDrop">
+                        <a class="dropdown-item" href="./msmesupport.html">MSME Supported</a>
+                        <a class="dropdown-item" href="./partner.html">MSME Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="./news.html">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="./whitepapers.html">Whitepapers</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- ══════════ NAVBAR END ══════════ -->
+
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero-symposium">
+    <div class="container position-relative" style="z-index:2;">
+        <span class="hero-tag">AI Symposium &nbsp;|&nbsp; 22–23 June 2026 &nbsp;|&nbsp; Amritapuri</span>
+        <h1>AI at Scale:<span>Perception, Sustainability &amp; Governed Agency</span></h1>
+        <p class="lead">A research symposium connecting perceptive AI, SDG observatories, sustainable infrastructure, sovereign capacity and trustworthy agentic systems.</p>
+        <a href="https://qrfy.io/Js0chUcRQN" class="btn-register" target="_blank">Register Now &nbsp;→</a>
+    </div>
+</section>
+<!-- ══════════ HERO END ══════════ -->
+
+<div id="host-strip">Hosted by AI Safety Research Lab, Department of Cyber Security, Amritapuri</div>
+
+
+<!-- ══════════ QUICK INFO BAR ══════════ -->
+<section id="quick-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-3 fade-up">
+                <div class="info-card">
+                    <div class="ic-icon"><i class="fa fa-calendar"></i></div>
+                    <h6>Date</h6>
+                    <p>22–23 June 2026</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3 fade-up">
+                <div class="info-card">
+                    <div class="ic-icon"><i class="fa fa-map-marker"></i></div>
+                    <h6>Venue</h6>
+                    <p>Amriteswari Hall</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3 fade-up">
+                <div class="info-card">
+                    <div class="ic-icon"><i class="fa fa-laptop"></i></div>
+                    <h6>Format</h6>
+                    <p>Hybrid</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-3 fade-up">
+                <div class="info-card">
+                    <div class="ic-icon"><i class="fa fa-shield"></i></div>
+                    <h6>Host</h6>
+                    <p>AI Safety Research Lab, Dept. of Cyber Security</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ QUICK INFO BAR END ══════════ -->
+
+
+<!-- ══════════ ABOUT ══════════ -->
+<div class="section-label fade-up">
+    <h2>About the Symposium</h2>
+    <div class="underline"></div>
+</div>
+<section id="about-symposium">
+    <div class="container fade-up">
+        <div class="about-box">
+            This two-day hybrid symposium brings together researchers, faculty members, students and practitioners to examine the next phase of AI: infrastructure-scale intelligence, open knowledge systems for SDGs, sustainable AI/HPC infrastructure, reliable multi-agent systems and zero-trust governance for enterprise agentic AI.
+        </div>
+    </div>
+</section>
+<!-- ══════════ ABOUT END ══════════ -->
+
+
+<!-- ══════════ SPEAKERS ══════════ -->
+<div class="section-label fade-up">
+    <h2>Featured Speakers &amp; Keynote Tags</h2>
+    <div class="underline"></div>
+    <p>Six leading researchers and practitioners share their work across perceptive AI, SDG observatories, infrastructure, and trustworthy agentic systems. Tap "Read bio" for full abstract and biography.</p>
+</div>
+<section id="speakers">
+    <div class="container">
+        <div class="row">
+
+            <!-- K1 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k1-pita-costa.png" alt="Prof. João Pita Costa">
+                    <span class="speaker-tag online">K1 · Online</span>
+                    <h5>Prof. João Pita Costa</h5>
+                    <div class="s-org">IRCAI, Slovenia</div>
+                    <div class="s-topic">Governing the IRCAI Bias-Aware AI-Enabled SDG Observatory</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k1', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k1">
+                        <strong>Abstract focus:</strong> Positions the IRCAI SDG Observatory as a multilingual, bias-aware knowledge infrastructure integrating news, publications, policies, educational resources, innovation ecosystems and SDG indicators. Links open knowledge infrastructure, agentic AI, Green AI orchestration and trusted SDG intelligence.<br><br>
+                        <strong>Bio note:</strong> Senior researcher at IRCAI under UNESCO auspices, with a PhD in Mathematics from the University of Ljubljana. Leads AI-driven SDG Observatory work and has contributed to topological data analysis, public-health big-data policy support and AI education.
+                    </div>
+                </div>
+            </div>
+
+            <!-- K2 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k2-debbah.jpg" alt="Dr. Mérouane Debbah">
+                    <span class="speaker-tag online">K2 · Online</span>
+                    <h5>Dr. Mérouane Debbah</h5>
+                    <div class="s-org">Khalifa University, UAE</div>
+                    <div class="s-topic">The Next Big Wave in AI: Large Perceptive Models</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k2', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k2">
+                        <strong>Abstract focus:</strong> Introduces Large Perceptive Models as foundation models that understand complex environments through RF signals, sensors, topology, states and events. Addresses cross-modal alignment, temporal reasoning, uncertainty, physical grounding and trustworthy perceptive AI for intelligent infrastructure.<br><br>
+                        <strong>Bio note:</strong> Professor at Khalifa University and founding Senior Director of KU 6G Research Center. His work spans telecommunications, random matrix theory, learning algorithms, 4G/5G/6G technologies, distributed AI systems, semantic communications, NOOR, Falcon LLM and the Falcon Foundation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- K3 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k3-veiga.jpg" alt="Prof. João Paulo Veiga">
+                    <span class="speaker-tag online">K3 · Online</span>
+                    <h5>Prof. João Paulo Veiga</h5>
+                    <div class="s-org">University of São Paulo, Brazil</div>
+                    <div class="s-topic">EU-LAC Collaboration on Infrastructure, Capacity and AI for the SDGs</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k3', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k3">
+                        <strong>Abstract focus:</strong> Explores EU-Latin America and Caribbean cooperation on AI, HPC and data-centre expansion aligned with SDG 9. Highlights AI-enabled visualizations, media tracking, governance analysis and risk monitoring across energy, water, supply chains and cybersecurity.<br><br>
+                        <strong>Bio note:</strong> Professor at the University of São Paulo, senior researcher at CAENI-USP and researcher at C4AI. His work spans transnational governance, human rights, multinational companies, social and environmental impact assessment, labour standards and AI ethics/regulation.
+                    </div>
+                </div>
+            </div>
+
+            <!-- K4 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k4-alkhzaimi.jpg" alt="Prof. Dr. Hoda A. Alkhzaimi">
+                    <span class="speaker-tag online">K4 · Online</span>
+                    <h5>Prof. Dr. Hoda A. Alkhzaimi</h5>
+                    <div class="s-org">NYU Abu Dhabi</div>
+                    <div class="s-topic">Towards Reliable Agentic AI: Reasoning, Verification and Trustworthy Multi-Agent Systems</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k4', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k4">
+                        <strong>Abstract focus:</strong> Examines next-generation reliable agentic AI beyond LLM interfaces. Focus areas include autonomous decision-making, planning architectures, verification and validation of outputs, trustworthy multi-agent coordination, safety, robustness, resilience, evaluation frameworks and human-AI oversight.<br><br>
+                        <strong>Bio note:</strong> Associate Vice Provost for Research Translation &amp; Innovation and Assistant Professor of Engineering at NYU Abu Dhabi. Founder/director of emaratsec and contributor to global emerging-technology and cybersecurity advisory ecosystems, including ITU and WEF engagements.
+                    </div>
+                </div>
+            </div>
+
+            <!-- K5 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k5-guruvayur.jpg" alt="Dr. Sivaramakrishnan R. Guruvayur">
+                    <span class="speaker-tag in-presence">K5 · In-Presence</span>
+                    <h5>Dr. Sivaramakrishnan R. Guruvayur</h5>
+                    <div class="s-org">Aaquarians.ai, Amrita AI Safety Research Lab, MBRSG</div>
+                    <div class="s-topic">AMMA: Agentic Mediation &amp; Monitoring Architecture</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k5', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k5">
+                        <strong>Abstract focus:</strong> Proposes an Agentic Gateway as the zero-trust runtime control plane for enterprise agentic AI. The architecture authorizes, transforms or blocks plans, tool calls, memory operations, external data exchange and agent-to-agent messages while integrating policy-as-code, guardrails, cumulative risk scoring and auditability.<br><br>
+                        <strong>Bio note:</strong> Executive AI consultant, Chief AI Officer, Professor of Practice and Head of AI Safety Research Lab at Amrita. Brings 28+ years of technology leadership and deep specialization in ML, GenAI, LLMs, Agentic AI, AI Safety, Responsible AI and AI governance across BFSI, education and public-sector contexts.
+                    </div>
+                </div>
+            </div>
+
+            <!-- K6 -->
+            <div class="col-lg-4 col-md-6 mb-4 fade-up">
+                <div class="speaker-card">
+                    <img class="speaker-photo" src="./images/speakers/k6-gressel.jpg" alt="Gilad Gressel">
+                    <span class="speaker-tag in-presence">K6 · In-Presence</span>
+                    <h5>Gilad Gressel</h5>
+                    <div class="s-org">Amrita Center for Cybersecurity Systems &amp; Networks</div>
+                    <div class="s-topic">Rules for Neural Traffic: A New Defensive Layer for LLMs</div>
+                    <a class="s-readmore" onclick="toggleBio('bio-k6', this)">Read bio ▾</a>
+                    <div class="speaker-bio-detail" id="bio-k6">
+                        <strong>Abstract focus:</strong> Introduces GAVEL, a rule-based detection framework that monitors model neural activations rather than only surface text. Inspired by Snort and YARA, it expresses precise security logic over interpretable Cognitive Elements to improve auditability, updateability and robustness against obfuscation, jailbreaks and prompt injection.<br><br>
+                        <strong>Bio note:</strong> Research associate and project lead at the Amrita Center for Cybersecurity Systems &amp; Networks. His work focuses on advanced AI system security, including LLM misuse in social engineering and cybercrime, rule-based activation monitoring, PRISM, agent attribution and accountable AI defense.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ══════════ SPEAKERS END ══════════ -->
+
+
+<!-- ══════════ PROGRAMME SCHEDULE ══════════ -->
+<div class="section-label fade-up">
+    <h2>Programme Schedule</h2>
+    <div class="underline"></div>
+    <p>Two days of keynotes, technical sessions and networking. Switch between days to see the full schedule.</p>
+</div>
+<section id="schedule">
+    <div class="container">
+        <div class="day-tabs fade-up">
+            <button class="day-tab active" onclick="showDay('day1', this)">Day 1 · Mon, 22 June</button>
+            <button class="day-tab" onclick="showDay('day2', this)">Day 2 · Tue, 23 June</button>
+        </div>
+
+        <!-- DAY 1 -->
+        <div id="panel-day1" class="day-panel active fade-up">
+            <table class="schedule-table">
+                <thead>
+                    <tr><th style="width:130px;">Time</th><th>Session</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="time-col">13:30</td><td>Lighting the Lamp and Welcome Address</td></tr>
+                    <tr><td class="time-col">14:00 – 15:00</td><td><strong>K1: Prof. João Pita Costa</strong> — Governing the IRCAI Bias-Aware AI-Enabled SDG Observatory <em>(Online)</em></td></tr>
+                    <tr><td class="time-col">15:00 – 16:00</td><td><strong>K2: Dr. Mérouane Debbah</strong> — The Next Big Wave in AI: Large Perceptive Models <em>(Online)</em></td></tr>
+                    <tr><td class="time-col">16:00 – 17:00</td><td><strong>K3: Prof. João Paulo Veiga</strong> — EU-LAC Collaboration on Infrastructure, Capacity and AI for the SDGs <em>(Online)</em></td></tr>
+                    <tr><td class="time-col">17:00</td><td>Tea and Networking</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- DAY 2 -->
+        <div id="panel-day2" class="day-panel fade-up">
+            <table class="schedule-table">
+                <thead>
+                    <tr><th style="width:130px;">Time</th><th>Session</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td class="time-col">10:30 – 11:00</td><td><strong>K4: Prof. Dr. Hoda A. Alkhzaimi</strong> — Towards Reliable Agentic AI: Reasoning, Verification and Trustworthy Multi-Agent Systems <em>(Online)</em></td></tr>
+                    <tr><td class="time-col">11:00 – 12:00</td><td><strong>K5: Dr. Sivaramakrishnan R. Guruvayur</strong> — AMMA: Agentic Mediation &amp; Monitoring Architecture <em>(In-Presence)</em></td></tr>
+                    <tr><td class="time-col">12:00 – 13:00</td><td><strong>K6: Gilad Gressel</strong> — Rules for Neural Traffic: A New Defensive Layer for LLMs <em>(In-Presence)</em></td></tr>
+                    <tr><td class="time-col">13:00 – 13:15</td><td><strong>Vote of Thanks</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<!-- ══════════ SCHEDULE END ══════════ -->
+
+
+<!-- ══════════ REGISTER / VENUE CTA ══════════ -->
+<section id="register" style="padding:0;">
+    <div id="cta-strip">
+        <div class="container">
+            <h3>Register Now – Limited Seats Available</h3>
+            <p>Scan the QR code below or click the button to secure your spot at the symposium.</p>
+            <div class="qr-box">
+                <img src="./images/speakers/symposium-qr.png" alt="Registration QR Code">
+            </div>
+            <br>
+            <a href="https://qrfy.io/Js0chUcRQN" class="btn-register" style="background:#f0c040;color:#0b1f47;" target="_blank">Register for AI Symposium 2026</a>
+            <div class="venue-line">
+                <i class="fa fa-map-marker"></i>Amrita Vishwa Vidyapeetham, Amritapuri Campus, Kollam, Kerala, India
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ CTA END ══════════ -->
+
+
+<!-- ══════════ FOOTER (matching TEC site exactly) ══════════ -->
+<section id="organize_2">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 org-item p-2">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <h3>Email</h3>
+                    <p>tec@amrita.edu</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item sm-style-h p-2">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h3>Website</h3>
+                    <p><a href="http://www.amrita.edu/tec" style="text-decoration:none;color:white;">www.amrita.edu/tec</a></p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item p-2">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <h3>Location</h3>
+                    <p>Technology Enabling Centre (TEC),</p>
+                    <p>Amrita Vishwa Vidyapeetham, Amritapuri</p>
+                    <p>Clappana P. O. , Kerala, India – 690 525.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 org-item or-i-none p-2">
+                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                    <h3>Mobile</h3>
+                    <p>+91 8921434611</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container zindex">
+        <div class="row">
+            <div class="col-lg-12 text-center footer-txt">
+                <img src="./images/Science-Technology-and-Innovation-STI.png" alt="" style="height:60px;">
+                <img src="./images/website logo.jpg" alt="" style="height:80px;">
+                <img src="./images/amrita1.jpg" alt="" style="height:70px;">
+                <div class="social-icons_2" style="margin-top:12px;">
+                    <a href="https://www.facebook.com/AmritaTEC/"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCHJi1WQ9Fd-tebdxipqcNZw"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="footer_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 m-auto">
+                <div class="menu-a text-center">
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./members.html">Members</a>
+                    <a href="./products.html">Products</a>
+                    <a href="./partner.html">Partners</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="copy_right">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center copy-right-txt">
+                <p>Copyright © 2024 – Amrita Vishwa Vidyapeetham. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ══════════ FOOTER END ══════════ -->
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Day tab switching
+    function showDay(day, btn) {
+        document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.day-tab').forEach(b => b.classList.remove('active'));
+        document.getElementById('panel-' + day).classList.add('active');
+        btn.classList.add('active');
+    }
+
+    // Speaker bio toggle
+    function toggleBio(id, link) {
+        const el = document.getElementById(id);
+        el.classList.toggle('show');
+        link.textContent = el.classList.contains('show') ? 'Hide bio ▴' : 'Read bio ▾';
+    }
+
+    // Scroll-triggered fade-up
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
